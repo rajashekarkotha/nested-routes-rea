@@ -35,11 +35,11 @@ const routes = [
 				component: Page2,
 				routes: [
 					{
-						path: '/home/page2/:id',
+						path: '/home/page2/mainpage1',
 						component: MainPage1,
 					},
 					{
-						path: '/home/page2/MainPage2',
+						path: '/home/page2/mainPage2',
 						component: MainPage2,
 					},
 				],
