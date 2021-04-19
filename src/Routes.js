@@ -4,6 +4,8 @@ import Page1 from './pages/Page1';
 import Page2 from './pages/Page2';
 import Subpage1 from './pages/subpages/Subpage1';
 import Subpage2 from './pages/subpages/Subpage2';
+import MainPage1 from './pages/mainpages/MainPage1';
+import MainPage2 from './pages/mainpages/MainPage2';
 
 const routes = [
 	{
@@ -30,7 +32,17 @@ const routes = [
 			},
 			{
 				path: '/home/page2',
-				component: Page2
+				component: Page2,
+				routes: [
+					{
+						path: '/home/page2/:id',
+						component: MainPage1,
+					},
+					{
+						path: '/home/page2/MainPage2',
+						component: MainPage2,
+					},
+				],
 			}
 		]
 	}
